@@ -10,7 +10,7 @@ client = MongoClient(url)
 db = client.pytech.students
 
 # testing code to ensure only 1 set of records are present in the db
-#db.delete_many({})
+db.delete_many({})
 
 print("-- INSERT STATEMENTS --")
 
@@ -21,10 +21,10 @@ charlie = {"student_id": 1009, "first_name": "Shellie", "last_name": "Werner" }
 
 # insert the records & display results
 a_id = db.insert_one(alpha).inserted_id
-print(f"Intested student record {alpha['first_name']} {alpha['last_name']} into the students collection with document_id {a_id}")
+print(f"Inserted student record {alpha['first_name']} {alpha['last_name']} into the students collection with document_id {a_id}")
 
 b_id = db.insert_one(beta).inserted_id
-print(f"Intested student record {beta['first_name']} {beta['last_name']} into the students collection with document_id {b_id}")
+print(f"Inserted student record {beta['first_name']} {beta['last_name']} into the students collection with document_id {b_id}")
 
 c_id = db.insert_one(charlie).inserted_id
-print(f"Intested student record {charlie['first_name']} {charlie['last_name']} into the students collection with document_id {c_id}")
+print(f"Inserted student record {charlie['first_name']} {charlie['last_name']} into the students collection with document_id {c_id}")

@@ -1,7 +1,7 @@
 # Nicholas Werner
 # CSD 310 - Module 6.2 Assignment
 # 06/20/2022
-# description
+# Following instructions, display students documents, update one record and display the updated record
 
 from pymongo import MongoClient
 url="mongodb+srv://admin:admin@cluster0.hoqlh.mongodb.net/?retryWrites=true&w=majority"
