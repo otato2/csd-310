@@ -1,3 +1,7 @@
+# Nicholas Werner
+# CSD 310 Assignment 8.2
+# 06/29/2022
+
 import mysql.connector
 from mysql.connector import errorcode
 
